@@ -1,0 +1,28 @@
+{
+  "name": "roblox-long-polling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReAdminRBX/roblox-long-polling.git"
+  },
+  "keywords": [
+    "roblox",
+    "http",
+    "long",
+    "polling",
+    "realtime",
+    "real",
+    "time"
+  ],
+  "author": "Matthew W",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReAdminRBX/roblox-long-polling/issues"
+  },
+  "homepage": "https://github.com/ReAdminRBX/roblox-long-polling#readme"
+}
