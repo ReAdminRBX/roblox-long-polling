@@ -1,6 +1,6 @@
 {
   "name": "roblox-long-polling",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,11 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ReAdminRBX/roblox-long-polling/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "uuid": "^8.3.2"
   },
   "homepage": "https://github.com/ReAdminRBX/roblox-long-polling#readme"
 }
