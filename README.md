@@ -1,6 +1,8 @@
 # Roblox-Long-Polling
 *A module to make Real-Time messaging from Roblox Servers to your Node.JS server easy.*
 
+If you need to use a scaled version you can view our scaled verion documentation by switching to its branch.
+
 Usage:
 
  1. Download our RobloxModule [here](https://github.com/ReAdminRBX/roblox-long-polling/blob/master/robloxLongPolling.rbxm)
@@ -11,7 +13,7 @@ Usage:
     const  rlp = require("roblox-long-polling")
 
     const  poll = new  rlp({
-	    port:  2004, // Add this behind your IP, example: http://127.0.0.1:2004,
+	    port:  5000, // Add this behind your IP, example: http://127.0.0.1:2004,
 	    //password: "passsword here" If you want to add a simple password, put uncomment this and add your password
     });
     
@@ -40,7 +42,7 @@ local robloxLongPolling = require(script.Parent.robloxLongPolling)
 
   
 
-local connection = robloxLongPolling.Connect("http://72.24.217.22:2004", "")
+local connection = robloxLongPolling.Connect("http://yourIphere:5000", "")
 
 connection:on("welcome", function(message)--This is an event fired in the above example, you can change this if you want into your own events.
 print("received welcome ", message)
