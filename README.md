@@ -1,11 +1,11 @@
-# Roblox-Long-Polling
-*A module to make Real-Time messaging from Roblox Servers to your Node.JS server easy.*
+# Grid Long-Polling
+*A Fork from ReAdminRBX/roblox-long-polling*
 
 If you need to use a scaled version you can view our scaled verion documentation by switching to its branch.
 
 Usage:
 
- 1. Download our RobloxModule [here](https://github.com/ReAdminRBX/roblox-long-polling/blob/master/robloxLongPolling.rbxm)
+ 1. Download our RobloxModule [here](https://github.com/grid-rbx/rlp/blob/master/robloxLongPolling.rbxm)
  2. Ensure HTTP Service is enabled as the steps below show
  3. Download the Roblox module by doing `npm i roblox-long-polling`
  4. Add it to your Node.JS code with the example
