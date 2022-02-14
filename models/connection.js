@@ -67,7 +67,9 @@ class Connection {
         this.lastPing = new Date();
 
         if (req.body.name !== undefined && req.body.data !== undefined) {
-            this.stream.emit(req.body.name, req.body.data)
+            const name = Buffer.from(req.body.name,'base64').toString();
+            const data = Buffer.from(req.body.data,'base64').toString();
+            this.stream.emit(name, data)
 
             res.json({
                 success: true
