@@ -102,8 +102,8 @@ class rlp {
 
                 if (req.body.name !== undefined && req.body.data !== undefined) {
                     this.publisher.publish(`${id}-send`, JSON.stringify({
-                        name: req.body.name,
-                        data: req.body.data
+                        name: Buffer.from(req.body.name,'base64').toString(),
+                        data: Buffer.from(req.body.data,'base64').toString()
                     }))
 
                     res.json({
