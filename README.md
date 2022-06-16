@@ -61,6 +61,10 @@ wait(30)
 connection:Disconnect()
 ```
 
+# Typescript Users
+If you're unable to grab type definition from the package manager, please compile `npm run build` and load the library manually (or directly use the ts source provided).
+
+
 # Enabling HTTP Service
 
  1. Head on over to your game in Roblox Studio
