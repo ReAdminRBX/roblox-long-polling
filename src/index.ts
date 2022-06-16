@@ -5,8 +5,9 @@ import events from 'events';
 import helmet from 'helmet'
 
 export interface rlpSettings {
-    port?: number,
-    password?: string
+    port?: number;
+    password?: string;
+    customExp? : express.Express
 }
 interface connectionDef {
     [key: string]: connection
@@ -20,7 +21,7 @@ export class rlp {
     
 
     constructor(settings : rlpSettings){
-        const pollServer = express();
+        const pollServer = settings.customExp || express();
         this.connections = {};
 
         this.port = settings.port || 2004;
@@ -96,7 +97,7 @@ export class rlp {
         })
 
 
-        pollServer.listen(this.port)
+        if(!settings.customExp) pollServer.listen(this.port);
     }
 
     on(event : string, handler : (...args: any[]) => void){
