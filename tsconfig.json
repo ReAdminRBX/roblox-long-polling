@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "allowJs": true,
+        "module": "commonjs",
+        "target": "es2015",
+        "strict": true,
+        "lib": ["es2017", "es7", "es6", "dom"],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "declaration": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "./src/**/*",
+    ],
+    "exclude": [
+        "./node_modules",
+        "./dist"
+    ]
+}
